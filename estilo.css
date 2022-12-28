@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    margin: 10px;
+}
+
+table {
+    border: 2px solid black;
+    width: 600px;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+table thead {
+    height: 100px;
+    width: 100px;
+}
+
+table th, td {
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+td {
+    border: 2px solid black;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+td:hover {
+    background-color: gray;
+}
+
+.visor {
+    height: 100px;
+    cursor: default;
+}

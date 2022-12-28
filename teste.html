@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <table>
+            <tbody>
+                <tr>
+                    <td class="visor" colspan="4">
+                        <p class="visorText"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="reset()">AC</td>
+                    <td onclick="plusAndHalf()">+/-</td>
+                    <td onclick="getPercent()">%</td>
+                    <td onclick="getOperator('/')">/</td>
+                </tr>
+                <tr>
+                    <td onclick="getNumber(7)">7</td>
+                    <td onclick="getNumber(8)">8</td>
+                    <td onclick="getNumber(9)">9</td>
+                    <td onclick="getOperator('*')">*</td>
+                </tr>
+                <tr>
+                    <td onclick="getNumber(4)">4</td>
+                    <td onclick="getNumber(5)">5</td>
+                    <td onclick="getNumber(6)">6</td>
+                    <td onclick="getOperator('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="getNumber(1)">1</td>
+                    <td onclick="getNumber(2)">2</td>
+                    <td onclick="getNumber(3)">3</td>
+                    <td onclick="getOperator('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="getNumber(0)" colspan="2">0</td>
+                    <td>,</td>
+                    <td onclick="calculate()">=</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+<script src="/calc.js"></script>
+</html>
